@@ -491,6 +491,30 @@ $.extend(true, kendo.ui.TreeView.prototype.options.messages,{
 });
 }
 
+  
+ 
+    /* TreeList messages */
+
+    if (kendo.ui.TreeList) {
+        kendo.ui.TreeList.prototype.options.messages =
+        $.extend(true, kendo.ui.TreeList.prototype.options.messages, {
+            "noRows": "无记录",
+            "loading": "加载中...",
+            "requestFailed": "必填",
+            "retry": "重试",
+            "commands": {
+                "edit": "编辑",
+                "update": "更新",
+                "canceledit": "取消编辑",
+                "create": "新建",
+                "createchild": "新增下级",
+                "destroy": "删除",
+                "excel": "导出到 Excel",
+                "pdf": "导出到 PDF"
+            }
+        });
+    }
+  
 /* Upload messages */
 
 if (kendo.ui.Upload) {
